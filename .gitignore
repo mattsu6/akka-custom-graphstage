@@ -1,0 +1,22 @@
+###
+# giter8テンプレートのデフォルト
+##
+target/
+boot/
+lib_managed/
+src_managed/
+project/plugins/project/
+
+###
+# 全般的なファイル
+##
+.DS_Store
+.Trashes
+*~
+*.swp
+*.un~
+
+###
+# IDEA
+##
+.idea/
