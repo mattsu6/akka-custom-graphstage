@@ -4,6 +4,7 @@ import akka.actor.ActorSystem
 import akka.stream.scaladsl.{ Flow, GraphDSL, RunnableGraph, Sink, Source }
 import akka.stream.{ ActorMaterializer, ClosedShape }
 
+/** 1~5を10倍するストリーム処理をGraphDSLでの記述例*/
 object Sample2 extends App {
 
   implicit val system = ActorSystem()

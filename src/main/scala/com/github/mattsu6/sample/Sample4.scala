@@ -4,6 +4,7 @@ import akka.actor.ActorSystem
 import akka.stream.scaladsl.{GraphDSL, Merge, Sink, Source}
 import akka.stream.{ActorMaterializer, SourceShape}
 
+/** GraphDSLを使ってSourceを作る例*/
 object Sample4 extends App {
 
   implicit val system = ActorSystem()

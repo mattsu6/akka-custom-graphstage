@@ -4,6 +4,7 @@ import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl.{ Sink, Source }
 
+/** 1~5を10倍するストリーム処理例 */
 object Sample1 extends App {
 
   implicit val system = ActorSystem()

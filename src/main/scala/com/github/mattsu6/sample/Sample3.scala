@@ -4,6 +4,7 @@ import akka.actor.ActorSystem
 import akka.stream.scaladsl.{ Broadcast, Flow, GraphDSL, Merge, RunnableGraph, Sink, Source }
 import akka.stream.{ ActorMaterializer, ClosedShape }
 
+/** 1~5を偶数奇数に応じて100倍，10倍するストリーム処理例*/
 object Sample3 extends App {
 
   implicit val system = ActorSystem()
