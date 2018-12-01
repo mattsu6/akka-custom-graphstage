@@ -10,5 +10,5 @@ object Sample1 extends App {
   implicit val ec = system.dispatcher
   implicit val materializer = ActorMaterializer()
 
-  Source(0 to 5).runWith(Sink.seq).foreach(println)
+  Source(1 to 5).map(_ * 10).runWith(Sink.seq).foreach(println)
 }

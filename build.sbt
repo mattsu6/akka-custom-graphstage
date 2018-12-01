@@ -28,7 +28,7 @@ lazy val commonSettings = Seq(
 lazy val root = (project in file("."))
   .settings(
     commonSettings,
-    name := "akka",
+    name := "akka-custom-graphstage",
     libraryDependencies ++= Seq(
       "com.typesafe.akka" %% "akka-stream" % "2.5.18"
     )
