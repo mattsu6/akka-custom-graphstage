@@ -28,8 +28,8 @@ object Sample3 extends App {
     val bcast = builder.add(Broadcast[Int](2))
     val merge = builder.add(Merge[Int](2))
 
-    in ~> bcast ~> oddFilter  ~> to10x ~> merge ~> o
-          bcast ~> evenFilter ~> to100x  ~> merge
+    in ~> bcast ~> oddFilter ~> to10x ~> merge ~> o
+    bcast ~> evenFilter ~> to100x ~> merge
 
     ClosedShape
   })
